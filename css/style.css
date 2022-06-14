@@ -1,0 +1,375 @@
+* {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", san-serif;
+}
+.container {
+  padding: 0;
+  max-width: 1028px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 12px;
+}
+
+.logo-left img {
+  height: 65px;
+}
+.bg-image {
+  position: absolute;
+  z-index: -1;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.offer {
+  width: 59%;
+  background: #fff;
+  padding-top: 20px;
+}
+.progress {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.order {
+  width: 39%;
+}
+.info {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.info p {
+  border: 1px solid #d4d4d4;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: #a42a5b;
+  text-align: center;
+}
+.text {
+  border-bottom: 1px solid #d4d4d4;
+  padding: 10px;
+  line-height: 41px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+#countdown {
+  color: #ff0000;
+}
+.red.nowrap {
+  color: #f00;
+}
+.soldout-risk .bar {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #aaa;
+  padding: 2px;
+  width: 75px;
+}
+.soldout-risk .bar .level {
+  background: red;
+  width: 12px;
+  height: 12px;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.red {
+  color: #f00;
+}
+.keto-gummies {
+  display: flex;
+  padding: 10px 20px;
+}
+.item {
+  width: 40%;
+}
+.sub-total {
+  width: 60%;
+  font-size: 12px;
+}
+.sub-total ul {
+  list-style: none;
+  padding: 0;
+}
+.sub-total li {
+  border-top: 1px solid #d4d4d4;
+  padding: 12px 0;
+}
+
+.sub-total span {
+  float: right;
+}
+.sub-total h3,
+p {
+  padding: 6px;
+  align-items: left;
+}
+.row {
+  background-color: #4c8c22;
+  color: white;
+  width: 97%;
+  font-size: 94%;
+  padding-top: 10px;
+}
+.row p {
+  text-align: right;
+}
+.disclaimer {
+  padding-top: 20px;
+  color: gray;
+  font-size: 64%;
+}
+.order {
+  background: white;
+}
+.step {
+  text-align: center;
+  background: #4c8c22;
+  padding-top: 15px;
+  color: #fff;
+  font-size: 29px;
+}
+.step p {
+  font-size: 20px;
+}
+.contect {
+  padding: 7px;
+  display: flex;
+  max-width: 100%;
+}
+.contect input {
+  width: 55%;
+  display: block;
+  display: flex;
+  padding: 6px;
+}
+
+lable {
+  width: 30%;
+  font-size: 13px;
+  padding-left: 18px;
+}
+#state {
+  width: 60%;
+  padding: 6px;
+}
+.biling {
+  display: flex;
+}
+.bank {
+  width: 33%;
+}
+.biling {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.biling img {
+  width: 50px;
+}
+.checkbox {
+  text-align: center;
+}
+#ccexpyear {
+  width: 58%;
+  border: 1px solid gray;
+  padding: 10px;
+}
+#ccexpmonth {
+  width: 58%;
+  border: 1px solid gray;
+  padding: 10px;
+}
+.terms p {
+  color: gray;
+  font-size: 60%;
+  padding-top: 10px;
+}
+.form h3 {
+  text-align: center;
+}
+
+.progress .bar {
+  width: 29%;
+  height: 4px;
+  background: #a42a5b;
+  position: absolute;
+  bottom: 31px;
+  left: 20%;
+  z-index: 1;
+}
+.progress .bar2 {
+  width: 29%;
+  height: 4px;
+  background: #dddddd;
+  position: absolute;
+  bottom: 31px;
+  right: 20%;
+  z-index: 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.row {
+  position: relative;
+}
+.row::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 31px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-left: 20px solid #4c8c22 !important;
+  border: 42px solid transparent;
+}
+.button {
+  padding-top: 22px;
+  padding-left: 50px;
+}
+.submit {
+  width: 80%;
+  padding: 15px 15px;
+  background: #0f97c1;
+  border: 0;
+  margin: 0 auto;
+  color: white;
+  font-size: 26px;
+  padding-top: 20px;
+  display: block;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+.submit:hover {
+  background-color: #4c8c22;
+}
+.add-app {
+  padding-top: 25px;
+  text-align: center;
+}
+.secure {
+  font-size: 11px;
+  padding-top: 30px;
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+.varifiy {
+  text-align: center;
+  padding-top: 20px;
+}
+.moneyback {
+  position: relative;
+  text-align: center;
+}
+.guarantee p {
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 50%;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 350;
+}
+.footer p {
+  font-size: 12px;
+  color: #8a8a8a !important;
+  line-height: 3;
+  padding-top: 20px;
+}
+.footer {
+  padding-top: 50px;
+}
+.copyright {
+  padding-top: 30px;
+  color: #8a8a8a !important;
+  font-size: 12px;
+  text-align: center;
+}
+.footer-links a {
+  text-decoration: none;
+  list-style: none;
+  color: #8a8a8a !important;
+  padding: 6px;
+  font-size: 13px;
+}
+.footer-links {
+  text-align: center;
+  padding-top: 25px;
+}
+@media (max-width: 991px) {
+  .order {
+    width: 100%;
+  }
+  .offer {
+    width: 100%;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .row {
+    font-size: 57%;
+    padding-left: 10px;
+  }
+  .step {
+    font-size: 16px;
+  }
+  .guarantee p {
+    top: 50%;
+    font-size: 13px;
+  }
+  .footer-links a {
+    padding: 3px;
+  }
+  .order {
+    padding-top: 20px;
+  }
+  .footer-links {
+    padding-bottom: 20px;
+  }
+  .footer p {
+    line-height: 2;
+    padding-top: 0;
+  }
+  .form h3 {
+    padding-top: 10px;
+  }
+  .item {
+    width: 44%;
+    padding-top: 27px;
+  }
+  .row::after {
+    border: 0px solid #4c8c22;
+  }
+}
